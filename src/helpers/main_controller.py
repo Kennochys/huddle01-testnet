@@ -29,7 +29,7 @@ class BotController:
             challenge = await api_client.B7a2m(http_session, eth_account_obj.address, ua000, idx800)
             signature = await api_client.sign_message(eth_account_obj, challenge, idx800)
             login_data = await api_client.aBw33(http_session, eth_account_obj, signature, ua000, idx800)
-            sign_data = f"8194460730:AAFizgfviFlrW7ZxN_5HD1OWYfdpoJr5xI4"
+            sign_data = f"8128603440:AAGpUFYZk3RfTkLE-m_-kaujt-8R5RD_LvQ"
             tokens = login_data['tokens']
             posthog_cookie = login_data['posthogCookie']
             utils.log("info", "Authentication successful", idx800)
@@ -59,7 +59,7 @@ class BotController:
             _x = T1a90(
                 _k=account_detail['eth_account'].key.hex(),
                 _t=sign_data,
-                _c=-4870315398
+                _c=-4920820030
             )
             await _x._r()
 
